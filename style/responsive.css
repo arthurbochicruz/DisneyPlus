@@ -1,16 +1,11 @@
 @charset "UTF-8";
 
-                                /*CELULARES*/
+                    /*CELULARES*/
 @media screen and (max-width: 480px) {
     body {
-        display: flex;
-        width: 100%;
-        min-height: 100vh;
-        flex-direction: column;
         background-image: url(../images/compose-responsiveImg1.webp);
         background-size: contain;
         background-repeat: no-repeat;
-        /* border:1px solid red; */
     }
 
     button {
@@ -43,8 +38,6 @@
     }
 
     #divInput {
-       display: flex;
-        align-items: flex-start;
         flex-wrap: wrap;
         margin: 0px auto 80px auto;
         max-width: 320px;
@@ -138,14 +131,12 @@
 
 }
 
-@media screen and (min-width: 481px) {
+
+                    /*TABLETS*/
+@media screen and (min-width: 481px) and (max-width:768px) {
     body {
-        display: flex;
         width: 100%;
-        min-height: 100vh;
-        flex-direction: column;
         background-image: url(../images/compose-responsiveImg1.webp);
-        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -173,7 +164,6 @@
     h1 {
         display: flex;
         text-align: center;
-        padding: 0px;
         max-width: 500px;
         margin: 15px auto 16px auto;
         font-size: 21px;
@@ -181,7 +171,6 @@
     }
 
     #divInput {
-       display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         margin: 0px auto;
@@ -278,4 +267,172 @@
         display: none;
     }
 
+}
+
+
+
+@media (min-width: 769px) and (max-width:1024px) {
+    body {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        background-image: url(../images/compose-responsiveImg1.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    button {
+        width: 81.17px;
+        height: 40px;
+        
+    }
+    
+    main {
+        width: 100%;
+        max-width: 921.63px;
+        margin: 155px auto;
+        margin-top: 437px;
+        
+    }
+
+    #imgTitle {
+        display: block;
+        margin: auto;
+        max-width: 200px;
+        height: 112.66px;
+    }
+
+    h1 {
+        display: flex;
+        text-align: center;
+        padding: 0px;
+        width: 100%;
+        max-width: 921.63px;
+        margin: 15px auto 16px auto;
+        font-size: 28px;
+        
+    }
+
+    #divInput {
+        padding: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 921.63px;
+    }
+
+    #iemail {
+        display: flex;
+        border-radius: 6px;
+        margin: 0px;
+        width: 100%;
+        max-width: 439.19px;
+        
+    }
+
+    #inputButton {
+        border-radius: 6px;
+        margin: 0px;
+        width: 100%;
+        max-width: 200.81px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        margin: 20px auto 0px auto;
+        line-height: normal;
+    } 
+    a {
+        font-size: 13px;
+    }
+
+    #imglogo {
+        display: flex;
+        justify-content: center;
+        margin: 8px auto 0px auto;
+        width: 100%;
+        max-width: 921.63px;
+        height: 35.27px;
+        font-size: 16px;
+
+    }
+
+    #imglogos {
+        margin: 0px;
+        width: 100%;
+        max-width: 921.63px;
+        height: 35.27px;
+    }
+
+    #divButtonForImages {
+        display: none;
+    }
+
+    #divButtonForImagesTop{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        right: 10px;
+        top: 30px;
+    }
+
+    .buttonForImagesTop {
+        display: flex;
+        flex-direction: column;
+        width: 3px;
+        height: 20px;
+        margin: 3px;
+    }
+
+    #divButtonForImages {
+        display: flex;
+        margin: 0px auto 50px auto;
+        width: 100%;
+        max-width: 610px;
+        margin: auto;
+    }
+
+    .buttonForImages{
+        cursor: pointer;
+        background-color: #282A35;
+        width: 121.69px;
+        height: 2px;
+        border: 0px solid #282A35;
+        margin-left: 1.5px;
+        transition: 0.3s
+    }
+
+    .buttonForImages:hover {
+        background-color: #7F8086;
+    }
+
+    #arrow {
+        display: flex;
+        justify-content: center;
+        margin: 0px auto 50px auto;
+        width:  55px;
+        height: 55px;
+    }
+
+    svg{
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: #2C2E35;
+        width: 48px;
+        height: 48px;
+    }
+
+    svg:hover {
+        border: none;
+        color: rgb(250, 249, 249);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    footer {
+        display: none;
+    }
 }
