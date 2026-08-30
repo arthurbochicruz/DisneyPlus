@@ -144,6 +144,10 @@ p {
     background-color: #7F8086;
 }
 
+.buttonForImages.ativo {
+    background-color: #7F8086; /* cor de destaque quando selecionado */
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -170,4 +174,8 @@ h2 {
 
 #arrow {
     display: none;
+}
+
+.buttonForImagesTop.ativo {
+    background-color: #7F8086;
 }
