@@ -1,3 +1,3 @@
 # DisneyPlus
 
-mini projeto Disney+ 2026
+Mini replica do site da Disney+ 2026
