@@ -3,8 +3,9 @@
                     /*CELULARES*/
 @media screen and (max-width: 480px) {
     body {
+        width: 100%;
         background-image: url(../images/compose-responsiveImg1.webp);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -103,6 +104,10 @@
         margin: 3px;
     }
 
+    .buttonForImagesTop:hover,
+    .buttonForImagesTop.ativo {
+        background-color: #7F8086;
+    }
     #arrow {
         display: flex;
         justify-content: center;
@@ -239,6 +244,11 @@
         width: 3px;
         height: 20px;
         margin: 3px;
+    }
+
+    .buttonForImagesTop:hover,
+    .buttonForImagesTop.ativo {
+        background-color: #7F8086;
     }
 
     #arrow {
@@ -386,6 +396,10 @@
         width: 3px;
         height: 20px;
         margin: 3px;
+    }
+    .buttonForImagesTop:hover,
+    .buttonForImagesTop.ativo {
+        background-color: #7F8086;
     }
 
     #divButtonForImages {

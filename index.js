@@ -1,11 +1,17 @@
 const buttons = document.querySelectorAll('.buttonForImages')
-const btn1 = document.getElementById('.btn1')
-const imagens = ['compose-img1', 'compose-img2', 'compose-img3', 'compose-img4']
+const buttonsTop = document.querySelectorAll('.buttonForImagesTop')
 let imagemAtual = 1
 
  function trocarImagem() {
+
+    let prefixo 
+    if (window.innerWidth <= 1024) {
+        prefixo = 'compose-responsiveImg'
+    } else {
+        prefixo = 'compose-img'
+    }
  
-    document.body.style.backgroundImage = `url('./images/compose-img${imagemAtual}.webp')`
+    document.body.style.backgroundImage = `url('./images/${prefixo}${imagemAtual}.webp')`
 
     buttons.forEach((botao) => {
     botao.classList.remove('ativo') 
@@ -13,8 +19,17 @@ let imagemAtual = 1
     if (botao.dataset.fundo == imagemAtual) {
         botao.classList.add('ativo')  
     }
+
 })
+    buttonsTop.forEach((botaoTop) => {
+        botaoTop.classList.remove('ativo')
+
+        if (botaoTop.dataset.fundo == imagemAtual) {
+            botaoTop.classList.add('ativo')  
+        } 
+    })
 }
+
 trocarImagem()
 
 const intervalo = setInterval(() => {
@@ -25,7 +40,6 @@ const intervalo = setInterval(() => {
         imagemAtual = 1
     } 
 
-    //document.body.style.backgroundImage = `url('./images/compose-img${imagemAtual}.webp')`
     trocarImagem()
 }, 3400)
 
@@ -37,5 +51,15 @@ buttons.forEach((button)  => {
         clearInterval(intervalo)
         imagemAtual = Number(button.dataset.fundo)
         trocarImagem()
-    }, 3400)
+    })
+})
+
+buttonsTop.forEach((buttonTop)  => {
+
+    buttonTop.addEventListener('click', () => {
+
+        clearInterval(intervalo)
+        imagemAtual = Number(buttonTop.dataset.fundo)
+        trocarImagem()
+    })
 })

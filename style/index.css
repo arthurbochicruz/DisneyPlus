@@ -154,6 +154,15 @@ p {
     background-color: #7F8086;
 }
 
+.buttonForImagesTop:hover {
+    background-color: #7F8086;
+}
+
+.buttonForImagesTop:hover,
+.buttonForImagesTop.ativo {
+    background-color: #7F8086;
+}
+
 .buttonForImages.ativo {
     background-color: #7F8086; /* cor de destaque quando selecionado */
 }
